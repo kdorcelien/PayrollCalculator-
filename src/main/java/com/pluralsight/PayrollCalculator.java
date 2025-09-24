@@ -10,14 +10,14 @@ public class PayrollCalculator {
         String name = payroll.nextLine();
 
         System.out.print("Please enter hours worked: ");
-        int hours = payroll.nextInt();
+        double hours = payroll.nextDouble();
         payroll.nextLine();
 
         System.out.print("Please enter hourly rate: ");
         double pay = payroll.nextDouble();
         payroll.nextLine();
 
-        System.out.printf("%d * %d = %d ", hours, pay,(hours * pay));
+        System.out.printf("%f * %f = %f", hours, pay, (hours * pay));
 
 
 
